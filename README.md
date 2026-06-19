@@ -1,6 +1,6 @@
 # GWT Hardwood Floors
 
-The official website for **GWT Hardwood Floors** — a second-generation, family-run hardwood flooring company serving Pontiac, Metro Detroit, and homeowners across Michigan. Refinishing, installation, and custom hand-mixed stain work.
+The official website for **GWT Hardwood Floors** — a second-generation, family-run hardwood flooring company serving Pontiac, Metro Detroit, and homeowners across Michigan. Refinishing, installation, and hand-mixed custom Duraseal stain work.
 
 🔗 **Live site:** https://k1lllagt.github.io/gwthardwoodfloors/
 *(or [gwthardwoodfloors.com](https://gwthardwoodfloors.com) once the custom domain is connected — see below)*
@@ -9,16 +9,15 @@ The official website for **GWT Hardwood Floors** — a second-generation, family
 
 ## About this site
 
-A fast, fully static website — no frameworks, no build step, no database. Just hand-written HTML, CSS, and a small amount of vanilla JavaScript. It loads instantly, works without JavaScript, and is cheap (free) to host on GitHub Pages.
+A fast, fully static website — no frameworks, no build step, no database. Just hand-written HTML, CSS, and a small amount of vanilla JavaScript. It loads instantly, works without JavaScript, and is free to host on GitHub Pages.
 
-**Eight pages:**
+**Seven pages:**
 
 | Page | File | What's on it |
 |------|------|--------------|
-| Home | `index.html` | Hero, services overview, featured project, family story |
-| Services | `services.html` | All 9 services with what/when/why detail |
-| Portfolio | `portfolio.html` | The Isaac & Rachel Red Oak case study |
-| Stain Gallery | `stain-gallery.html` | Custom color families, hand-built stain swatches |
+| Home | `index.html` | Hero, what we do, why families call us back, contact |
+| Services | `services.html` | All 9 services as a detailed reference list |
+| Stain Gallery | `stain-gallery.html` | The full 36-color Duraseal catalog, numbered, plus our WheatStone Oak signature blend |
 | About | `about.html` | The Turner family story and values |
 | FAQ | `faq.html` | 14 common questions answered |
 | Floor Care | `floor-care.html` | How to clean and protect your floors |
@@ -32,15 +31,14 @@ A fast, fully static website — no frameworks, no build step, no database. Just
 gwthardwoodfloors/
 ├── index.html          # Home
 ├── services.html
-├── portfolio.html
 ├── stain-gallery.html
 ├── about.html
 ├── faq.html
 ├── floor-care.html
 ├── pricing.html
 ├── style.css           # Full design system (one shared stylesheet)
-├── main.js             # Mobile nav + scroll-reveal (progressive enhancement)
-├── .nojekyll           # Tells GitHub Pages to serve files as-is
+├── main.js             # Mobile nav close-on-click + scroll-reveal
+├── .nojekyll            # Tells GitHub Pages to serve files as-is
 └── README.md
 ```
 
@@ -64,22 +62,23 @@ Then open **http://localhost:8000** in a browser. Edit a file, refresh the page,
 
 ## Deploy to GitHub Pages
 
-This repo is set up to publish straight from the `main` branch — every push goes live automatically.
+This repo publishes straight from the `main` branch — every push goes live automatically.
 
-**One-time setup:**
+**One-time setup (already done for this repo):**
 
-1. Push your code to `main` (if you haven't already):
-   ```bash
-   git add .
-   git commit -m "Update site"
-   git push origin main
-   ```
-2. On GitHub, go to the repo → **Settings** → **Pages**.
-3. Under **Build and deployment → Source**, choose **Deploy from a branch**.
-4. Set **Branch** to `main` and the folder to **`/ (root)`**, then click **Save**.
-5. Wait ~1 minute. The site goes live at **https://k1lllagt.github.io/gwthardwoodfloors/**.
+1. Repo → **Settings** → **Pages**.
+2. **Source:** Deploy from a branch.
+3. **Branch:** `main`, folder **`/ (root)`** → **Save**.
 
-After that, every `git push` to `main` redeploys the site on its own. No CLI tools, no Cloudflare, no server to maintain.
+**Every update after that is just:**
+
+```bash
+git add -A
+git commit -m "Describe what changed"
+git push origin main
+```
+
+Wait about a minute, then reload the site. No CLI tools, no Cloudflare, no server to maintain.
 
 > **Why `.nojekyll`?** GitHub Pages runs files through Jekyll by default, which can ignore
 > some files and folders. This site is plain HTML, so the empty `.nojekyll` file disables
@@ -126,35 +125,58 @@ Back in **Settings → Pages**, wait for the domain to verify (can take up to 24
 
 ## Editing guide
 
-**Swap placeholder images for real photos.** The portfolio and gallery currently use styled
-placeholder blocks. To drop in a real photo, replace a placeholder `<div>` with:
+**Add real photography.** There's no job-site photography yet, so every image area on the
+site — the homepage hero, the About page, the stain catalog — uses a **specimen panel**:
+a textured material swatch with a small catalog-style tag, standing in for a photo. This
+keeps the site looking intentional rather than "image missing."
+
+To swap a specimen panel for a real photo, find its `.specimen-media` or `.material-panel`
+`<div>` and replace it with an `<img>`:
 
 ```html
-<img src="images/your-photo.jpg" alt="Describe the photo" loading="lazy">
+<div class="specimen-media">
+  <img src="images/your-photo.jpg" alt="Describe the photo" loading="lazy" style="width:100%;height:100%;object-fit:cover">
+  <span class="specimen-tag">Your caption</span>
+</div>
 ```
 
 Create an `images/` folder in the repo, commit your photos there, and reference them by path.
+Once you have a body of real project photos, bringing back a dedicated portfolio page
+(removed earlier for privacy reasons) would be the single biggest trust upgrade for the site.
 
 **Update contact info.** Phone numbers and emails appear in the footer and contact sections of
 every page. Find-and-replace across all `.html` files to change them everywhere at once.
 
 **Change colors or fonts.** Everything visual is controlled by CSS variables at the top of
-`style.css` (the `:root { ... }` block) — colors, the honey-amber accent, spacing, and the
-Fraunces / Hanken Grotesk type pairing. Change a value there and it updates site-wide.
+`style.css` (the `:root { ... }` block): `--ink`, `--bone`, `--brass`, and the rest of the
+palette, plus the Fraunces / Inter type pairing. Change a value there and it updates site-wide.
+
+**Edit the stain catalog.** Each Duraseal color is one `.specimen` block inside
+`stain-gallery.html`, grouped by family (Whites & Neutrals, Grays, Golden & Light Browns,
+Warm Browns, Reds & Mahogany, Rich Darks) and numbered sequentially (No. 01–36). Swatches
+are CSS gradients, not photos — see the in-page note linking to Duraseal's official gallery
+for true photographed colors.
 
 ---
 
 ## Design notes
 
-- **Type:** Fraunces (display headings) + Hanken Grotesk (body), loaded from Google Fonts.
-- **Palette:** warm walnut and espresso browns against off-white "paper," with a honey-amber accent — the bare-oak-to-finished-wood metaphor of the craft.
-- **Signature element:** the stain swatch cards, built as CSS gradients, mirror the physical
-  sample boards the family mixes for every custom color.
-- **Accessibility:** all content is visible without JavaScript; the scroll animations are a
-  progressive enhancement layered on top. Honors `prefers-reduced-motion` and uses visible
-  focus outlines for keyboard navigation.
+- **Type:** Fraunces, light weight (300–400) at large sizes for headlines — editorial, not
+  decorative — paired with Inter for body text and tracked-uppercase labels.
+- **Palette:** near-black ink, bone and parchment paper, deep walnut, and an antique brass
+  accent used only as hairlines, labels, and hover states — never a filled button or card.
+- **Layout:** hairline-divided editorial lists instead of rounded card grids (see Services
+  and Pricing) — closer to a spec sheet or menu than a typical contractor site.
+- **Signature element:** the specimen panel — a material-grain swatch with a small catalog
+  tag, used for the hero image, the Duraseal stain catalog, and every other "photography"
+  slot on the site until real jobsite photos are ready.
+- **Navigation:** the mobile menu is a native `<details>` element, so it opens and closes
+  correctly even with JavaScript disabled. `main.js` only adds a "close on link tap" polish
+  on top.
+- **Accessibility:** all content is visible without JavaScript; scroll-reveal animations are
+  a progressive enhancement layered on top via a `.js` class set before paint. Honors
+  `prefers-reduced-motion` and uses visible focus outlines for keyboard navigation.
 
 ---
 
 *Built for GWT Hardwood Floors — family-owned, Michigan-built.*
-
