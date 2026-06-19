@@ -7,7 +7,7 @@
   <meta name="description" content="A practical hardwood floor care guide: daily and weekly cleaning, what to avoid, how to protect your floors, and when to call for refinishing or repairs.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,340;9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <script>document.documentElement.classList.add('js');</script>
 </head>
@@ -15,19 +15,33 @@
   <header class="site-header">
     <div class="container">
       <nav class="nav" aria-label="Primary">
-        <a class="brand" href="index.html"><span class="brand-mark">GWT</span><span><span class="brand-name">GWT Hardwood Floors</span><span class="brand-sub">Pontiac · Metro Detroit</span></span></a>
-        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links"><span></span></button>
-        <ul class="nav-links" id="nav-links">
+        <a class="brand" href="index.html">
+          <span class="brand-mark">G·W·T</span>
+          <span><span class="brand-name">Hardwood Floors</span><span class="brand-sub">Pontiac · Metro Detroit</span></span>
+        </a>
+        <ul class="nav-links-desktop">
           <li><a href="index.html">Home</a></li>
           <li><a href="services.html">Services</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
           <li><a href="stain-gallery.html">Stain Gallery</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="faq.html">FAQ</a></li>
           <li><a href="floor-care.html" class="active">Floor Care</a></li>
           <li><a href="pricing.html">Pricing</a></li>
-          <li class="nav-cta"><a class="btn" href="pricing.html#quote">Get a quote</a></li>
         </ul>
+        <div class="nav-cta-desktop"><a class="btn" href="pricing.html#quote">Request a quote</a></div>
+        <details class="nav-mobile">
+          <summary><span class="burger"><span></span><span></span><span></span></span>Menu</summary>
+          <div class="nav-mobile-panel">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="stain-gallery.html">Stain Gallery</a>
+            <a href="about.html">About</a>
+            <a href="faq.html">FAQ</a>
+            <a href="floor-care.html">Floor Care</a>
+            <a href="pricing.html">Pricing</a>
+            <a class="btn nav-cta-mobile" href="pricing.html#quote">Request a quote</a>
+          </div>
+        </details>
       </nav>
     </div>
   </header>
@@ -35,42 +49,44 @@
   <main>
     <section class="page-hero">
       <div class="container">
-        <span class="eyebrow">Floor Care Guide</span>
-        <h1>How to keep your floors looking new</h1>
-        <p>A good hardwood floor rewards a little routine. Follow these simple habits and your finish will stay beautiful for years between refinishes — whether your floors are brand new or freshly restored.</p>
+        <span class="eyebrow eyebrow--dark">Floor Care Guide</span>
+        <h1>How to keep your floors looking new.</h1>
+        <p class="lead">A good hardwood floor rewards a little routine. Follow these habits and your finish will stay beautiful for years between refinishes — whether your floors are brand new or freshly restored.</p>
       </div>
     </section>
 
     <section class="section">
       <div class="container" style="max-width:880px">
 
-        <div class="guide-block reveal">
-          <h3><span class="step">Step 01</span> Daily &amp; weekly cleaning</h3>
-          <p style="margin-top:.8rem;color:var(--muted)">The goal is simple: keep grit off the surface, because fine dirt is what dulls a finish over time.</p>
-          <ul class="checklist">
+        <div class="reveal" style="padding-block:2rem; border-top:1px solid var(--line)">
+          <span class="cap" style="color:var(--brass)">Step 01</span>
+          <h3 style="margin-top:.5rem">Daily &amp; weekly cleaning</h3>
+          <p class="lead" style="margin-top:.7rem">The goal is simple: keep grit off the surface, because fine dirt is what dulls a finish over time.</p>
+          <ul class="tick-list" style="margin-top:1.3rem">
             <li><strong>Daily / as needed:</strong> Sweep or dry dust-mop high-traffic areas. A microfiber mop lifts grit without scratching.</li>
-            <li><strong>Weekly:</strong> Vacuum with a hard-floor (bare-floor) setting or a soft-brush head — never a beater bar.</li>
+            <li><strong>Weekly:</strong> Vacuum with a hard-floor setting or a soft-brush head — never a beater bar.</li>
             <li><strong>Weekly or as needed:</strong> Damp-mop with a cleaner made for hardwood. Use a well-wrung microfiber pad — the floor should look barely damp and dry within seconds.</li>
             <li><strong>Spills:</strong> Wipe up promptly. Standing liquid is the enemy of any wood floor.</li>
           </ul>
         </div>
 
-        <div class="guide-block reveal">
-          <h3><span class="step">Step 02</span> What to avoid</h3>
-          <p style="margin-top:.8rem;color:var(--muted)">Most floor damage we're called to fix comes from the wrong cleaning method, not normal wear.</p>
-          <div class="do-dont">
-            <div class="col do">
-              <h4>Do</h4>
-              <ul>
+        <div class="reveal" style="padding-block:2rem; border-top:1px solid var(--line)">
+          <span class="cap" style="color:var(--brass)">Step 02</span>
+          <h3 style="margin-top:.5rem">What to avoid</h3>
+          <p class="lead" style="margin-top:.7rem">Most floor damage we're called to fix comes from the wrong cleaning method, not normal wear.</p>
+          <div class="grid grid-2" style="margin-top:1.3rem">
+            <div>
+              <span class="cap">Do</span>
+              <ul class="tick-list" style="margin-top:.8rem">
                 <li>Use cleaners made specifically for hardwood floors</li>
                 <li>Keep the mop barely damp and dry quickly</li>
                 <li>Test any new product in a closet or corner first</li>
                 <li>Follow your finish manufacturer's recommendations</li>
               </ul>
             </div>
-            <div class="col dont">
-              <h4>Avoid</h4>
-              <ul>
+            <div>
+              <span class="cap">Avoid</span>
+              <ul class="tick-list tick-list--avoid" style="margin-top:.8rem">
                 <li><strong>Steam mops</strong> — heat and moisture can cloud or lift a finish</li>
                 <li>Wet mopping or letting water pool on the floor</li>
                 <li>Vinegar, ammonia, bleach, or all-purpose sprays</li>
@@ -81,23 +97,25 @@
           </div>
         </div>
 
-        <div class="guide-block reveal">
-          <h3><span class="step">Step 03</span> How to protect your floors</h3>
-          <p style="margin-top:.8rem;color:var(--muted)">A few small habits prevent the scratches and dents that send floors to early refinishing.</p>
-          <ul class="checklist">
-            <li><strong>Rugs &amp; mats:</strong> Place walk-off mats at every entry to catch grit and road salt — important through a Michigan winter. Use breathable, non-staining rug pads (avoid solid rubber backing that can mar the finish).</li>
+        <div class="reveal" style="padding-block:2rem; border-top:1px solid var(--line)">
+          <span class="cap" style="color:var(--brass)">Step 03</span>
+          <h3 style="margin-top:.5rem">How to protect your floors</h3>
+          <p class="lead" style="margin-top:.7rem">A few small habits prevent the scratches and dents that send floors to early refinishing.</p>
+          <ul class="tick-list" style="margin-top:1.3rem">
+            <li><strong>Rugs &amp; mats:</strong> Place walk-off mats at every entry to catch grit and road salt — important through a Michigan winter. Use breathable, non-staining rug pads.</li>
             <li><strong>Furniture pads:</strong> Put felt pads under all furniture legs and check them regularly — a worn pad with embedded grit acts like sandpaper.</li>
             <li><strong>Pet nails:</strong> Keep nails trimmed. Even a well-finished floor will show scratches from long claws over time.</li>
-            <li><strong>Sunlight:</strong> Wood color shifts with UV exposure. Rotate rugs and area pieces occasionally so the floor ages evenly, and consider blinds for sun-heavy rooms.</li>
-            <li><strong>Humidity:</strong> Wood expands and contracts with the seasons. Aim to keep indoor humidity in a stable, moderate range year-round to minimize gapping in winter and cupping in summer.</li>
+            <li><strong>Sunlight:</strong> Wood color shifts with UV exposure. Rotate rugs and area pieces occasionally so the floor ages evenly.</li>
+            <li><strong>Humidity:</strong> Wood expands and contracts with the seasons. Keep indoor humidity in a stable, moderate range to minimize gapping in winter and cupping in summer.</li>
             <li><strong>Shoes:</strong> Keep heels in good repair and grit outside — small habits add up over years.</li>
           </ul>
         </div>
 
-        <div class="guide-block reveal">
-          <h3><span class="step">Step 04</span> When to call for refinishing or repairs</h3>
-          <p style="margin-top:.8rem;color:var(--muted)">Catching wear early often means a simpler, less expensive fix. Reach out when you notice:</p>
-          <ul class="checklist">
+        <div class="reveal" style="padding-block:2rem; border-top:1px solid var(--line); border-bottom:1px solid var(--line)">
+          <span class="cap" style="color:var(--brass)">Step 04</span>
+          <h3 style="margin-top:.5rem">When to call for refinishing or repairs</h3>
+          <p class="lead" style="margin-top:.7rem">Catching wear early often means a simpler, less expensive fix. Reach out when you notice:</p>
+          <ul class="tick-list" style="margin-top:1.3rem">
             <li>Dull, worn finish in traffic paths, hallways, or in front of the sink and stove</li>
             <li>Surface scratches that have started reaching bare wood</li>
             <li>Gray or black spots, which can mean moisture has gotten past the finish</li>
@@ -105,31 +123,43 @@
             <li>Water damage, pet stains, or a few boards that need replacing</li>
             <li>A color that no longer fits your space — a refinish is the time to change it</li>
           </ul>
-          <p style="margin-top:1rem;color:var(--muted)">When a finish is worn but the wood underneath is sound, a <strong>recoat or refinish</strong> restores protection before damage reaches the wood. We're glad to take a look and tell you honestly what your floor needs.</p>
+          <p class="lead" style="margin-top:1.2rem">When a finish is worn but the wood underneath is sound, a <em>recoat or refinish</em> restores protection before damage reaches the wood. We're glad to take a look and tell you honestly what your floor needs.</p>
         </div>
 
       </div>
     </section>
 
-    <section class="section section--espresso">
+    <section class="section section--dark">
       <div class="container center reveal">
-        <span class="eyebrow">Time for a refresh?</span>
+        <span class="eyebrow eyebrow--dark">Time for a refresh?</span>
         <h2>We'll assess your floors honestly</h2>
-        <p class="lead" style="margin-top:1rem">Whether it's a simple recoat or a full refinish, we'll tell you what makes sense for your floor and your budget.</p>
-        <div style="margin-top:1.8rem"><a class="btn" href="pricing.html#quote">Request a quote →</a></div>
+        <p class="lead" style="color:rgba(246,242,234,.74); margin-inline:auto; margin-top:1.1rem">Whether it's a simple recoat or a full refinish, we'll tell you what makes sense for your floor and your budget.</p>
+        <div style="margin-top:1.9rem"><a class="btn" href="pricing.html#quote">Request a quote <span class="arrow">→</span></a></div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand"><a class="brand" href="index.html"><span class="brand-mark">GWT</span><span><span class="brand-name" style="color:var(--cream)">GWT Hardwood Floors</span></span></a><p>Second-generation hardwood flooring craftsmanship — refinishing, installation, and custom stain work across Pontiac and Metro Detroit.</p></div>
-        <div><h4>Explore</h4><ul class="footer-links"><li><a href="services.html">Services</a></li><li><a href="portfolio.html">Project Portfolio</a></li><li><a href="stain-gallery.html">Stain Gallery</a></li><li><a href="about.html">About Us</a></li></ul></div>
-        <div><h4>Helpful</h4><ul class="footer-links"><li><a href="faq.html">FAQ</a></li><li><a href="floor-care.html">Floor Care Guide</a></li><li><a href="pricing.html">Pricing Guide</a></li><li><a href="pricing.html#quote">Request a Quote</a></li></ul></div>
-        <div><h4>Contact</h4><div class="footer-contact"><span class="tel">Gary · 248-379-6826</span><span class="tel">Jake · 248-632-3244</span><span class="tel">Greg · 947-957-4996</span><a href="mailto:gwthardwoodfloors@gmail.com">gwthardwoodfloors@gmail.com</a><span>Serving all of Michigan</span></div></div>
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a class="brand" href="index.html"><span class="brand-mark">G·W·T</span><span><span class="brand-name">Hardwood Floors</span></span></a>
+          <p>Second-generation hardwood flooring craftsmanship — refinishing, installation, and custom stain work across Pontiac and Metro Detroit.</p>
+        </div>
+        <div class="footer-col"><h4>Explore</h4><ul><li><a href="services.html">Services</a></li><li><a href="stain-gallery.html">Stain Gallery</a></li><li><a href="about.html">About Us</a></li></ul></div>
+        <div class="footer-col"><h4>Helpful</h4><ul><li><a href="faq.html">FAQ</a></li><li><a href="floor-care.html">Floor Care Guide</a></li><li><a href="pricing.html">Pricing Guide</a></li><li><a href="pricing.html#quote">Request a Quote</a></li></ul></div>
+        <div class="footer-col"><h4>Contact</h4><ul>
+          <li><a href="tel:+12483796826">Gary · 248-379-6826</a></li>
+          <li><a href="tel:+12486323244">Jake · 248-632-3244</a></li>
+          <li><a href="tel:+19479574996">Greg · 947-957-4996</a></li>
+          <li><a href="mailto:gwthardwoodfloors@gmail.com">gwthardwoodfloors@gmail.com</a></li>
+          <li><span>Serving all of Michigan</span></li>
+        </ul></div>
       </div>
-      <div class="footer-bottom"><span>© 2026 GWT Hardwood Floors · Family-owned, Michigan-built</span><span>Glitsa · Duraseal · Pallmann · Bona · Loba</span></div>
+      <div class="footer-bottom">
+        <span>© 2026 GWT Hardwood Floors · Family-owned, Michigan-built</span>
+        <span>Stains by Duraseal · Finishes by Glitsa, Pallmann, Bona, Loba</span>
+      </div>
     </div>
   </footer>
   <script src="main.js"></script>

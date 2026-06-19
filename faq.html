@@ -7,7 +7,7 @@
   <meta name="description" content="Common questions about hardwood floor refinishing and installation: timelines, dust, odor, pets, furniture, maintenance, and our Metro Detroit service area.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,340;9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <script>document.documentElement.classList.add('js');</script>
 </head>
@@ -15,19 +15,33 @@
   <header class="site-header">
     <div class="container">
       <nav class="nav" aria-label="Primary">
-        <a class="brand" href="index.html"><span class="brand-mark">GWT</span><span><span class="brand-name">GWT Hardwood Floors</span><span class="brand-sub">Pontiac · Metro Detroit</span></span></a>
-        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links"><span></span></button>
-        <ul class="nav-links" id="nav-links">
+        <a class="brand" href="index.html">
+          <span class="brand-mark">G·W·T</span>
+          <span><span class="brand-name">Hardwood Floors</span><span class="brand-sub">Pontiac · Metro Detroit</span></span>
+        </a>
+        <ul class="nav-links-desktop">
           <li><a href="index.html">Home</a></li>
           <li><a href="services.html">Services</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
           <li><a href="stain-gallery.html">Stain Gallery</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="faq.html" class="active">FAQ</a></li>
           <li><a href="floor-care.html">Floor Care</a></li>
           <li><a href="pricing.html">Pricing</a></li>
-          <li class="nav-cta"><a class="btn" href="pricing.html#quote">Get a quote</a></li>
         </ul>
+        <div class="nav-cta-desktop"><a class="btn" href="pricing.html#quote">Request a quote</a></div>
+        <details class="nav-mobile">
+          <summary><span class="burger"><span></span><span></span><span></span></span>Menu</summary>
+          <div class="nav-mobile-panel">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="stain-gallery.html">Stain Gallery</a>
+            <a href="about.html">About</a>
+            <a href="faq.html">FAQ</a>
+            <a href="floor-care.html">Floor Care</a>
+            <a href="pricing.html">Pricing</a>
+            <a class="btn nav-cta-mobile" href="pricing.html#quote">Request a quote</a>
+          </div>
+        </details>
       </nav>
     </div>
   </header>
@@ -35,83 +49,83 @@
   <main>
     <section class="page-hero">
       <div class="container">
-        <span class="eyebrow">FAQ</span>
-        <h1>Questions homeowners ask us</h1>
-        <p>Straight answers about what a hardwood project actually looks like — timelines, dust, odor, pets, and everything in between. Don't see your question? Just call.</p>
+        <span class="eyebrow eyebrow--dark">FAQ</span>
+        <h1>Questions homeowners ask us.</h1>
+        <p class="lead">Straight answers about what a hardwood project actually looks like — timelines, dust, odor, pets, and everything in between. Don't see your question? Just call.</p>
       </div>
     </section>
 
     <section class="section">
       <div class="container">
-        <div class="faq reveal">
+        <div class="faq-list reveal" style="max-width:820px">
 
-          <details open>
-            <summary>How long does a typical refinishing job take?</summary>
+          <details class="faq-item" open>
+            <summary><span>How long does a typical refinishing job take?</span><span class="toggle"></span></summary>
             <div class="answer"><p>Most whole-floor refinishes run about three to five days, depending on square footage, the stain, and the finish system. Sanding and staining happen first, then each coat of finish needs time to dry between passes. We'll give you a firm timeline once we've seen the floor.</p></div>
           </details>
 
-          <details>
-            <summary>Is hardwood refinishing very dusty?</summary>
+          <details class="faq-item">
+            <summary><span>Is hardwood refinishing very dusty?</span><span class="toggle"></span></summary>
             <div class="answer"><p>Far less than people expect. We sand with professional, dust-contained equipment that captures the vast majority of dust at the source. You'll still want to wipe down a few surfaces afterward, but the days of a house buried in fine grit are behind us.</p></div>
           </details>
 
-          <details>
-            <summary>Will the finish smell? Can we stay in the house?</summary>
+          <details class="faq-item">
+            <summary><span>Will the finish smell? Can we stay in the house?</span><span class="toggle"></span></summary>
             <div class="answer"><p>It depends on the finish you choose. Water-based systems are low-odor and clear quickly. Oil-based and traditional alcohol-based finishes carry a stronger smell and need more ventilation. For odor-sensitive households or occupied homes, we'll usually recommend a water-based system and walk you through what to expect.</p></div>
           </details>
 
-          <details>
-            <summary>What about my pets?</summary>
+          <details class="faq-item">
+            <summary><span>What about my pets?</span><span class="toggle"></span></summary>
             <div class="answer"><p>Pets and fresh finish don't mix — paws track and curiosity gets the better of them. We ask that pets stay out of the work area while floors are curing. We're happy to plan the job in sections when possible so your home stays livable.</p></div>
           </details>
 
-          <details>
-            <summary>Do you move the furniture?</summary>
+          <details class="faq-item">
+            <summary><span>Do you move the furniture?</span><span class="toggle"></span></summary>
             <div class="answer"><p>We can help with the heavy pieces, but we ask that you clear small items, electronics, rugs, and breakables before we start. A clear room lets us prep properly and protects your belongings from dust and finish.</p></div>
           </details>
 
-          <details>
-            <summary>How soon can we walk on the floors and put furniture back?</summary>
+          <details class="faq-item">
+            <summary><span>How soon can we walk on the floors and put furniture back?</span><span class="toggle"></span></summary>
             <div class="answer"><p>You can usually walk on the floors in socks within a day of the final coat. We recommend waiting before putting rugs down and moving furniture back, since finishes keep curing to full hardness for a couple of weeks. We'll give you exact times for your specific finish.</p></div>
           </details>
 
-          <details>
-            <summary>Can you match a custom color to my cabinets or trim?</summary>
-            <div class="answer"><p>Yes — this is some of our favorite work. We blend stains and prove the color on sample boards milled from your own floor before we commit. Our WheatStone Oak finish in the portfolio came from exactly this process: matching a floor to two different cabinet tones in the same home.</p></div>
+          <details class="faq-item">
+            <summary><span>Can you match a custom color to my cabinets or trim?</span><span class="toggle"></span></summary>
+            <div class="answer"><p>Yes — this is some of our favorite work. We blend Duraseal stains and prove the color on sample boards milled from your own floor before we commit. Our WheatStone Oak finish came from exactly this process: matching a floor to two different cabinet tones in the same home.</p></div>
           </details>
 
-          <details>
-            <summary>How many times can a floor be refinished?</summary>
+          <details class="faq-item">
+            <summary><span>How many times can a floor be refinished?</span><span class="toggle"></span></summary>
             <div class="answer"><p>Solid hardwood can typically be refinished several times over its lifetime, because each refinish only removes a thin layer. Engineered floors have a thinner wear layer and can usually be refinished fewer times. We'll check your floor's thickness and let you know what's left to work with.</p></div>
           </details>
 
-          <details>
-            <summary>Should I refinish or replace my floors?</summary>
+          <details class="faq-item">
+            <summary><span>Should I refinish or replace my floors?</span><span class="toggle"></span></summary>
             <div class="answer"><p>If the boards are solid and have enough thickness left, refinishing is almost always the better value — you keep the original wood and get a like-new result. Replacement makes sense when there's severe water damage, structural issues, or the wear layer is gone. We'll give you an honest read either way.</p></div>
           </details>
 
-          <details>
-            <summary>What's the difference between water-, oil-, and alcohol-based finishes?</summary>
+          <details class="faq-item">
+            <summary><span>What's the difference between water-, oil-, and alcohol-based finishes?</span><span class="toggle"></span></summary>
             <div class="answer"><p>Water-based finishes dry fast, stay clear, and keep your color true. Oil-based finishes add warmth and a slight amber tone and are very forgiving. Traditional alcohol-based (Swedish-style) finishes are prized for a hard, glass-clear film. Each has a place — we'll recommend the right one for your color, traffic, and household.</p></div>
           </details>
 
-          <details>
-            <summary>Can you repair water damage, pet stains, or a few bad boards?</summary>
+          <details class="faq-item">
+            <summary><span>Can you repair water damage, pet stains, or a few bad boards?</span><span class="toggle"></span></summary>
             <div class="answer"><p>Yes. We replace damaged boards, weave in new wood, and blend repairs into the surrounding floor so they disappear. A good patch matches species, grain, and board size — then the stain and finish are feathered so your eye never finds the seam.</p></div>
           </details>
 
-          <details>
-            <summary>Do you install new hardwood, or only refinish?</summary>
+          <details class="faq-item">
+            <summary><span>Do you install new hardwood, or only refinish?</span><span class="toggle"></span></summary>
             <div class="answer"><p>Both. We install new solid and engineered hardwood — including subfloor prep, acclimation, layout, and finishing — and we refinish existing floors and staircases. Many projects combine the two.</p></div>
           </details>
 
-          <details>
-            <summary>What areas do you serve?</summary>
+          <details class="faq-item">
+            <summary><span>What areas do you serve?</span><span class="toggle"></span></summary>
             <div class="answer"><p>We're based in the Pontiac and Metro Detroit area and work with homeowners all over Michigan. If you're not sure whether you're in range, just give us a call.</p></div>
           </details>
 
-          <details>
-            <summary>How do I get a quote?</summary>
+          <details class="faq-item">
+            <summary><span>How do I get a quote?</span><span class="toggle"></span></summary>
             <div class="answer"><p>Call or email Gary or Greg, tell us a little about your space, and we'll set up a walkthrough. After we've seen the floor, you'll get a detailed quote with no pressure to book. Reach us at 248-379-6826 (Gary) or 947-957-4996 (Greg).</p></div>
           </details>
 
@@ -121,23 +135,35 @@
 
     <section class="section section--dark">
       <div class="container center reveal">
-        <span class="eyebrow">Still have a question?</span>
+        <span class="eyebrow eyebrow--dark">Still have a question?</span>
         <h2>Ask us directly</h2>
-        <p class="lead" style="margin-top:1rem">We're happy to talk through your project before you commit to anything.</p>
-        <div style="margin-top:1.8rem"><a class="btn" href="pricing.html#quote">Get in touch →</a></div>
+        <p class="lead" style="color:rgba(246,242,234,.74); margin-inline:auto; margin-top:1.1rem">We're happy to talk through your project before you commit to anything.</p>
+        <div style="margin-top:1.9rem"><a class="btn" href="pricing.html#quote">Get in touch <span class="arrow">→</span></a></div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand"><a class="brand" href="index.html"><span class="brand-mark">GWT</span><span><span class="brand-name" style="color:var(--cream)">GWT Hardwood Floors</span></span></a><p>Second-generation hardwood flooring craftsmanship — refinishing, installation, and custom stain work across Pontiac and Metro Detroit.</p></div>
-        <div><h4>Explore</h4><ul class="footer-links"><li><a href="services.html">Services</a></li><li><a href="portfolio.html">Project Portfolio</a></li><li><a href="stain-gallery.html">Stain Gallery</a></li><li><a href="about.html">About Us</a></li></ul></div>
-        <div><h4>Helpful</h4><ul class="footer-links"><li><a href="faq.html">FAQ</a></li><li><a href="floor-care.html">Floor Care Guide</a></li><li><a href="pricing.html">Pricing Guide</a></li><li><a href="pricing.html#quote">Request a Quote</a></li></ul></div>
-        <div><h4>Contact</h4><div class="footer-contact"><span class="tel">Gary · 248-379-6826</span><span class="tel">Jake · 248-632-3244</span><span class="tel">Greg · 947-957-4996</span><a href="mailto:gwthardwoodfloors@gmail.com">gwthardwoodfloors@gmail.com</a><span>Serving all of Michigan</span></div></div>
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a class="brand" href="index.html"><span class="brand-mark">G·W·T</span><span><span class="brand-name">Hardwood Floors</span></span></a>
+          <p>Second-generation hardwood flooring craftsmanship — refinishing, installation, and custom stain work across Pontiac and Metro Detroit.</p>
+        </div>
+        <div class="footer-col"><h4>Explore</h4><ul><li><a href="services.html">Services</a></li><li><a href="stain-gallery.html">Stain Gallery</a></li><li><a href="about.html">About Us</a></li></ul></div>
+        <div class="footer-col"><h4>Helpful</h4><ul><li><a href="faq.html">FAQ</a></li><li><a href="floor-care.html">Floor Care Guide</a></li><li><a href="pricing.html">Pricing Guide</a></li><li><a href="pricing.html#quote">Request a Quote</a></li></ul></div>
+        <div class="footer-col"><h4>Contact</h4><ul>
+          <li><a href="tel:+12483796826">Gary · 248-379-6826</a></li>
+          <li><a href="tel:+12486323244">Jake · 248-632-3244</a></li>
+          <li><a href="tel:+19479574996">Greg · 947-957-4996</a></li>
+          <li><a href="mailto:gwthardwoodfloors@gmail.com">gwthardwoodfloors@gmail.com</a></li>
+          <li><span>Serving all of Michigan</span></li>
+        </ul></div>
       </div>
-      <div class="footer-bottom"><span>© 2026 GWT Hardwood Floors · Family-owned, Michigan-built</span><span>Glitsa · Duraseal · Pallmann · Bona · Loba</span></div>
+      <div class="footer-bottom">
+        <span>© 2026 GWT Hardwood Floors · Family-owned, Michigan-built</span>
+        <span>Stains by Duraseal · Finishes by Glitsa, Pallmann, Bona, Loba</span>
+      </div>
     </div>
   </footer>
   <script src="main.js"></script>

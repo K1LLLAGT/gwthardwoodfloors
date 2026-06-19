@@ -1,23 +1,16 @@
 /* GWT Hardwood Floors — minimal interactions (no dependencies) */
 (function () {
-  // Mobile navigation toggle
-  var toggle = document.querySelector('.nav-toggle');
-  var links = document.getElementById('nav-links');
-  if (toggle && links) {
-    toggle.addEventListener('click', function () {
-      var open = links.classList.toggle('open');
-      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
-    });
-    // Close menu when a link is tapped
-    links.addEventListener('click', function (e) {
-      if (e.target.tagName === 'A') {
-        links.classList.remove('open');
-        toggle.setAttribute('aria-expanded', 'false');
-      }
+  // Mobile nav is a native <details> element — works with zero JS.
+  // This just closes it automatically after a link is tapped.
+  var nav = document.querySelector('.nav-mobile');
+  if (nav) {
+    nav.addEventListener('click', function (e) {
+      if (e.target.tagName === 'A') nav.removeAttribute('open');
     });
   }
 
-  // Scroll-reveal (respects reduced-motion via CSS fallback)
+  // Scroll-reveal (progressive enhancement — content is visible by default;
+  // see .js .reveal in style.css). Respects reduced-motion via CSS fallback.
   var reveals = document.querySelectorAll('.reveal');
   if ('IntersectionObserver' in window && reveals.length) {
     var io = new IntersectionObserver(function (entries) {

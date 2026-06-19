@@ -7,7 +7,7 @@
   <meta name="description" content="GWT Hardwood Floors was founded in the early 2000s by Gary and Mary Turner. Their sons Jake and Greg carry the craft forward — 60+ years combined across Metro Detroit.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,340;9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <script>document.documentElement.classList.add('js');</script>
 </head>
@@ -15,19 +15,33 @@
   <header class="site-header">
     <div class="container">
       <nav class="nav" aria-label="Primary">
-        <a class="brand" href="index.html"><span class="brand-mark">GWT</span><span><span class="brand-name">GWT Hardwood Floors</span><span class="brand-sub">Pontiac · Metro Detroit</span></span></a>
-        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links"><span></span></button>
-        <ul class="nav-links" id="nav-links">
+        <a class="brand" href="index.html">
+          <span class="brand-mark">G·W·T</span>
+          <span><span class="brand-name">Hardwood Floors</span><span class="brand-sub">Pontiac · Metro Detroit</span></span>
+        </a>
+        <ul class="nav-links-desktop">
           <li><a href="index.html">Home</a></li>
           <li><a href="services.html">Services</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
           <li><a href="stain-gallery.html">Stain Gallery</a></li>
           <li><a href="about.html" class="active">About</a></li>
           <li><a href="faq.html">FAQ</a></li>
           <li><a href="floor-care.html">Floor Care</a></li>
           <li><a href="pricing.html">Pricing</a></li>
-          <li class="nav-cta"><a class="btn" href="pricing.html#quote">Get a quote</a></li>
         </ul>
+        <div class="nav-cta-desktop"><a class="btn" href="pricing.html#quote">Request a quote</a></div>
+        <details class="nav-mobile">
+          <summary><span class="burger"><span></span><span></span><span></span></span>Menu</summary>
+          <div class="nav-mobile-panel">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="stain-gallery.html">Stain Gallery</a>
+            <a href="about.html">About</a>
+            <a href="faq.html">FAQ</a>
+            <a href="floor-care.html">Floor Care</a>
+            <a href="pricing.html">Pricing</a>
+            <a class="btn nav-cta-mobile" href="pricing.html#quote">Request a quote</a>
+          </div>
+        </details>
       </nav>
     </div>
   </header>
@@ -35,9 +49,9 @@
   <main>
     <section class="page-hero">
       <div class="container">
-        <span class="eyebrow">About Us</span>
-        <h1>Two generations, one standard</h1>
-        <p>GWT Hardwood Floors is a family business — started by a husband and wife, carried on by their two sons, and held to the same standard it was built on more than twenty years ago.</p>
+        <span class="eyebrow eyebrow--dark">About Us</span>
+        <h1>Two generations, one standard.</h1>
+        <p class="lead">GWT Hardwood Floors is a family business — started by a husband and wife, carried on by their two sons, and held to the same standard it was built on more than twenty years ago.</p>
       </div>
     </section>
 
@@ -47,23 +61,33 @@
           <div>
             <span class="eyebrow">Where it started</span>
             <h2>Gary &amp; Mary Turner, early 2000s</h2>
-            <p>The business was founded in the early 2000s by Gary and Mary Turner, who built their reputation on craftsmanship, honesty, and high-quality hardwood work throughout Pontiac and the Metro Detroit area.</p>
-            <p style="margin-top:1rem">Gary handled the technical side of the craft — sanding, refinishing, installation, and custom stain work. Mary managed operations and customer relationships. Together they created a company known for reliability, attention to detail, and floors that stand the test of time. Their commitment to quality still guides the business today.</p>
+            <p class="lead" style="margin-top:1.1rem">The business was founded in the early 2000s by Gary and Mary Turner, who built their reputation on craftsmanship, honesty, and high-quality hardwood work throughout Pontiac and the Metro Detroit area.</p>
+            <p class="lead" style="margin-top:1rem">Gary handled the technical side of the craft — sanding, refinishing, installation, and custom stain work. Mary managed operations and customer relationships. Together they built a company known for reliability, attention to detail, and floors that stand the test of time. Their standard still guides the business today.</p>
           </div>
-          <div class="photo"><span>Family photo<small>Gary &amp; Mary Turner — founders</small></span></div>
+          <div class="material-panel">
+            <div class="specimen-media" style="background-image:repeating-linear-gradient(110deg, rgba(21,18,15,.025) 0px, rgba(21,18,15,.025) 1px, transparent 1px, transparent 4px), linear-gradient(160deg, var(--parchment), var(--bone) 60%)">
+              <span class="specimen-tag">Photograph — Founders</span>
+            </div>
+            <div class="specimen-body"><div class="specimen-name">Gary &amp; Mary Turner</div><div class="specimen-meta">Founders</div></div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="section section--paper">
+    <section class="section section--parchment">
       <div class="container">
         <div class="split reveal">
-          <div class="photo"><span>Family photo<small>Jake &amp; Greg on the job</small></span></div>
+          <div class="material-panel">
+            <div class="specimen-media" style="background-image:repeating-linear-gradient(110deg, rgba(21,18,15,.025) 0px, rgba(21,18,15,.025) 1px, transparent 1px, transparent 4px), linear-gradient(160deg, #e7dcc6, #f4ecdf 60%)">
+              <span class="specimen-tag">Photograph — On the Job</span>
+            </div>
+            <div class="specimen-body"><div class="specimen-name">Jake &amp; Greg Turner</div><div class="specimen-meta">Second generation</div></div>
+          </div>
           <div>
             <span class="eyebrow">The next generation</span>
             <h2>Jake &amp; Greg, learning at their father's side</h2>
-            <p>Gary and Mary's two sons, Jake (40) and Greg (37), have been part of the business since graduating high school in 2004 and 2008. Both grew up learning the trade directly from their father — and over the years have become an even stronger, more refined version of him when it comes to installing and refinishing hardwood floors.</p>
-            <p style="margin-top:1rem">Today the family brings decades of combined experience, pride, and dedication to every home — delivering floors that look beautiful, wear well, and make homeowners proud of their space.</p>
+            <p class="lead" style="margin-top:1.1rem">Gary and Mary's two sons, Jake and Greg, have been part of the business since graduating high school in 2004 and 2008. Both grew up learning the trade directly from their father, and over the years have become an even more refined version of him at installing and refinishing hardwood floors.</p>
+            <p class="lead" style="margin-top:1rem">Today the family brings decades of combined experience, pride, and care to every home — delivering floors that look beautiful, wear well, and make homeowners proud of their space.</p>
           </div>
         </div>
       </div>
@@ -76,48 +100,58 @@
           <span class="eyebrow">What we stand on</span>
           <h2>The values Gary and Mary built the company on</h2>
         </div>
-        <div class="grid grid-3 reveal">
-          <article class="card"><span class="card-num">·</span><h3>Craftsmanship</h3><p>Sharp tools, clean prep, and finishes applied with patience. The details you can't see are what make the floor last.</p></article>
-          <article class="card"><span class="card-num">·</span><h3>Honesty</h3><p>Straight answers about what your floor needs — and what it doesn't. No upsell, no surprises on the invoice.</p></article>
-          <article class="card"><span class="card-num">·</span><h3>Respect</h3><p>For your home, your time, and your floors. We keep the job site clean and treat the work like it's in our own house.</p></article>
-          <article class="card"><span class="card-num">·</span><h3>Reliability</h3><p>We show up, communicate, and stay until it's right. "Whatever it takes" is our actual schedule.</p></article>
-          <article class="card"><span class="card-num">·</span><h3>Attention to detail</h3><p>Color matched on sample boards, edges hand-worked, sheen checked in real light before we call it done.</p></article>
-          <article class="card"><span class="card-num">·</span><h3>Floors that last</h3><p>The right finish system for the job means floors that hold up to kids, pets, and Michigan winters for decades.</p></article>
+        <div class="grid grid-3 reveal" style="gap:1.2rem">
+          <div class="plate"><span class="cap">Craftsmanship</span><h3>Sharp tools, patient hands</h3><p>Clean prep and finishes applied with patience. The details you can't see are what make the floor last.</p></div>
+          <div class="plate"><span class="cap">Honesty</span><h3>Straight answers</h3><p>What your floor needs, and what it doesn't. No upsell, no surprises on the invoice.</p></div>
+          <div class="plate"><span class="cap">Respect</span><h3>For your home</h3><p>And your time, and your floors. We keep the job site clean and treat the work like it's our own house.</p></div>
+          <div class="plate"><span class="cap">Reliability</span><h3>We show up</h3><p>We communicate, and stay until it's right. "Whatever it takes" is our actual schedule.</p></div>
+          <div class="plate"><span class="cap">Attention to detail</span><h3>Checked in real light</h3><p>Color matched on sample boards, edges hand-worked, sheen checked before we call it done.</p></div>
+          <div class="plate"><span class="cap">Built to last</span><h3>Floors that hold up</h3><p>The right finish system for the job means floors that handle kids, pets, and Michigan winters for decades.</p></div>
         </div>
       </div>
     </section>
 
     <!-- EXPERIENCE STRIP -->
-    <section class="section section--dark section--tight">
-      <div class="container">
-        <div class="stats" style="border:0;background:transparent">
-          <div class="stat" style="background:transparent"><div class="num">60+</div><div class="label" style="color:var(--cream-dim)">Years combined experience</div></div>
-          <div class="stat" style="background:transparent"><div class="num">2000s</div><div class="label" style="color:var(--cream-dim)">Family-owned since</div></div>
-          <div class="stat" style="background:transparent"><div class="num">2</div><div class="label" style="color:var(--cream-dim)">Generations of the trade</div></div>
-          <div class="stat" style="background:transparent"><div class="num">All MI</div><div class="label" style="color:var(--cream-dim)">Michigan service area</div></div>
-        </div>
+    <div class="container">
+      <div class="stats-strip">
+        <div class="stat"><div class="num">60+</div><div class="label">Years combined experience</div></div>
+        <div class="stat"><div class="num">2000s</div><div class="label">Family-owned since</div></div>
+        <div class="stat"><div class="num">2</div><div class="label">Generations of the trade</div></div>
+        <div class="stat"><div class="num">All&nbsp;MI</div><div class="label">Michigan service area</div></div>
       </div>
-    </section>
+    </div>
 
-    <section class="section section--espresso">
+    <section class="section section--dark">
       <div class="container center reveal">
-        <span class="eyebrow">Work with the family</span>
+        <span class="eyebrow eyebrow--dark">Work with the family</span>
         <h2>We'd be glad to help with your floors</h2>
-        <p class="lead" style="margin-top:1rem">Call Gary, Jake, or Greg directly — you'll always be talking to someone who'll be on the job.</p>
-        <div style="margin-top:1.8rem"><a class="btn" href="pricing.html#quote">Request a quote →</a></div>
+        <p class="lead" style="color:rgba(246,242,234,.74); margin-inline:auto; margin-top:1.1rem">Call Gary, Jake, or Greg directly — you'll always be talking to someone who'll be on the job.</p>
+        <div style="margin-top:1.9rem"><a class="btn" href="pricing.html#quote">Request a quote <span class="arrow">→</span></a></div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand"><a class="brand" href="index.html"><span class="brand-mark">GWT</span><span><span class="brand-name" style="color:var(--cream)">GWT Hardwood Floors</span></span></a><p>Second-generation hardwood flooring craftsmanship — refinishing, installation, and custom stain work across Pontiac and Metro Detroit.</p></div>
-        <div><h4>Explore</h4><ul class="footer-links"><li><a href="services.html">Services</a></li><li><a href="portfolio.html">Project Portfolio</a></li><li><a href="stain-gallery.html">Stain Gallery</a></li><li><a href="about.html">About Us</a></li></ul></div>
-        <div><h4>Helpful</h4><ul class="footer-links"><li><a href="faq.html">FAQ</a></li><li><a href="floor-care.html">Floor Care Guide</a></li><li><a href="pricing.html">Pricing Guide</a></li><li><a href="pricing.html#quote">Request a Quote</a></li></ul></div>
-        <div><h4>Contact</h4><div class="footer-contact"><span class="tel">Gary · 248-379-6826</span><span class="tel">Jake · 248-632-3244</span><span class="tel">Greg · 947-957-4996</span><a href="mailto:gwthardwoodfloors@gmail.com">gwthardwoodfloors@gmail.com</a><span>Serving all of Michigan</span></div></div>
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a class="brand" href="index.html"><span class="brand-mark">G·W·T</span><span><span class="brand-name">Hardwood Floors</span></span></a>
+          <p>Second-generation hardwood flooring craftsmanship — refinishing, installation, and custom stain work across Pontiac and Metro Detroit.</p>
+        </div>
+        <div class="footer-col"><h4>Explore</h4><ul><li><a href="services.html">Services</a></li><li><a href="stain-gallery.html">Stain Gallery</a></li><li><a href="about.html">About Us</a></li></ul></div>
+        <div class="footer-col"><h4>Helpful</h4><ul><li><a href="faq.html">FAQ</a></li><li><a href="floor-care.html">Floor Care Guide</a></li><li><a href="pricing.html">Pricing Guide</a></li><li><a href="pricing.html#quote">Request a Quote</a></li></ul></div>
+        <div class="footer-col"><h4>Contact</h4><ul>
+          <li><a href="tel:+12483796826">Gary · 248-379-6826</a></li>
+          <li><a href="tel:+12486323244">Jake · 248-632-3244</a></li>
+          <li><a href="tel:+19479574996">Greg · 947-957-4996</a></li>
+          <li><a href="mailto:gwthardwoodfloors@gmail.com">gwthardwoodfloors@gmail.com</a></li>
+          <li><span>Serving all of Michigan</span></li>
+        </ul></div>
       </div>
-      <div class="footer-bottom"><span>© 2026 GWT Hardwood Floors · Family-owned, Michigan-built</span><span>Glitsa · Duraseal · Pallmann · Bona · Loba</span></div>
+      <div class="footer-bottom">
+        <span>© 2026 GWT Hardwood Floors · Family-owned, Michigan-built</span>
+        <span>Stains by Duraseal · Finishes by Glitsa, Pallmann, Bona, Loba</span>
+      </div>
     </div>
   </footer>
   <script src="main.js"></script>

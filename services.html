@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Services — Refinishing, Installation & Custom Stain | GWT Hardwood Floors</title>
-  <meta name="description" content="Hardwood floor refinishing, installation, staircase work, custom stain mixing, bleaching, and water-, alcohol-, and oil-based finishing across Metro Detroit.">
+  <title>Services — Hardwood Floor Refinishing & Installation | GWT Hardwood Floors</title>
+  <meta name="description" content="Refinishing, installation, staircase work, custom Duraseal stain mixing, bleaching, and water-, oil-, and alcohol-based finishing, done in-house by GWT Hardwood Floors.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,340;9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <script>document.documentElement.classList.add('js');</script>
 </head>
@@ -16,21 +16,32 @@
     <div class="container">
       <nav class="nav" aria-label="Primary">
         <a class="brand" href="index.html">
-          <span class="brand-mark">GWT</span>
-          <span><span class="brand-name">GWT Hardwood Floors</span><span class="brand-sub">Pontiac · Metro Detroit</span></span>
+          <span class="brand-mark">G·W·T</span>
+          <span><span class="brand-name">Hardwood Floors</span><span class="brand-sub">Pontiac · Metro Detroit</span></span>
         </a>
-        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links"><span></span></button>
-        <ul class="nav-links" id="nav-links">
+        <ul class="nav-links-desktop">
           <li><a href="index.html">Home</a></li>
           <li><a href="services.html" class="active">Services</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
           <li><a href="stain-gallery.html">Stain Gallery</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="faq.html">FAQ</a></li>
           <li><a href="floor-care.html">Floor Care</a></li>
           <li><a href="pricing.html">Pricing</a></li>
-          <li class="nav-cta"><a class="btn" href="pricing.html#quote">Get a quote</a></li>
         </ul>
+        <div class="nav-cta-desktop"><a class="btn" href="pricing.html#quote">Request a quote</a></div>
+        <details class="nav-mobile">
+          <summary><span class="burger"><span></span><span></span><span></span></span>Menu</summary>
+          <div class="nav-mobile-panel">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="stain-gallery.html">Stain Gallery</a>
+            <a href="about.html">About</a>
+            <a href="faq.html">FAQ</a>
+            <a href="floor-care.html">Floor Care</a>
+            <a href="pricing.html">Pricing</a>
+            <a class="btn nav-cta-mobile" href="pricing.html#quote">Request a quote</a>
+          </div>
+        </details>
       </nav>
     </div>
   </header>
@@ -38,157 +49,141 @@
   <main>
     <section class="page-hero">
       <div class="container">
-        <span class="eyebrow">Services</span>
-        <h1>Everything we do to a hardwood floor</h1>
-        <p>From the first sanding pass to the final coat, we handle the whole job in-house. Here's what each service involves, when you need it, and why our family does it well.</p>
+        <span class="eyebrow eyebrow--dark">Services</span>
+        <h1>Every service, from bare wood to final coat.</h1>
+        <p class="lead">We handle the whole job in-house, start to finish. Here's what each service involves, when you need it, and why our family does it the way we do.</p>
       </div>
     </section>
 
     <section class="section">
       <div class="container">
+        <div class="row-list reveal">
 
-        <div class="service reveal" id="refinishing">
-          <div>
-            <div class="service-index">01</div>
-            <h3>Hardwood Floor Refinishing</h3>
-            <div class="service-meta">Sand · stain · finish</div>
+          <div class="row-item" id="refinishing">
+            <span class="cap">Sand · Stain · Finish</span>
+            <div>
+              <h3>Hardwood Floor Refinishing</h3>
+              <p class="desc">We sand existing hardwood down to fresh, bare wood, repair what needs it, then apply new stain and a protective finish — essentially resetting your floor to new.</p>
+              <p class="desc" style="margin-top:.5rem"><strong style="color:var(--ink)">When it's needed.</strong> Worn traffic paths, dull or flaking finish, surface scratches, pet damage, water marks, or simply a color you've outgrown. Most solid hardwood can be refinished several times over its life.</p>
+              <div class="why"><strong>Why GWT.</strong> Clean sanding is the whole game. We grade through the right abrasive sequence so the floor takes stain evenly — no swirl marks, no blotch — which is what separates a floor that looks redone from one that just looks recoated.</div>
+            </div>
           </div>
-          <div class="service-body">
-            <p><strong>What it is.</strong> We sand existing hardwood down to fresh, bare wood, repair what needs it, then apply new stain and a protective finish — essentially resetting your floor to new.</p>
-            <p><strong>When it's needed.</strong> Worn traffic paths, dull or flaking finish, surface scratches, pet damage, water marks, or simply a color you've outgrown. Most solid hardwood can be refinished several times over its life.</p>
-            <div class="why"><strong>Why GWT.</strong> Clean sanding is the whole game. We grade through the right abrasive sequence so the floor takes stain evenly — no swirl, no drum marks, no blotch — which is what separates a floor that looks redone from one that just looks recoated.</div>
+
+          <div class="row-item" id="installation">
+            <span class="cap">Solid &amp; Engineered</span>
+            <div>
+              <h3>Hardwood Floor Installation</h3>
+              <p class="desc">Laying new hardwood — solid or engineered — including subfloor prep, acclimation, layout, fastening, and finishing.</p>
+              <p class="desc" style="margin-top:.5rem"><strong style="color:var(--ink)">When it's needed.</strong> New construction, additions, replacing carpet or tile, or pulling up flooring that's too far gone to refinish.</p>
+              <div class="why"><strong>Why GWT.</strong> We let the wood acclimate, set proper expansion gaps, and plan board layout so the room reads right from the doorway. A floor installed with patience stays flat and tight for decades.</div>
+            </div>
           </div>
+
+          <div class="row-item" id="staircases">
+            <span class="cap">Treads · Risers · Rails</span>
+            <div>
+              <h3>Staircase Refinishing</h3>
+              <p class="desc">Refinishing or rebuilding stair treads, risers, and handrails so the staircase matches the floors it connects to.</p>
+              <p class="desc" style="margin-top:.5rem"><strong style="color:var(--ink)">When it's needed.</strong> Stairs take more wear than any other surface in the house. When the finish on the nosing or the color no longer matches a freshly refinished floor, the stairs need attention too.</p>
+              <div class="why"><strong>Why GWT.</strong> Stairs are detailed, hand-worked surfaces with far more edges than open floor — no room for shortcuts. We match the floor's stain and sheen exactly so the transition looks like it was always one piece.</div>
+            </div>
+          </div>
+
+          <div class="row-item" id="stain">
+            <span class="cap">Duraseal Custom Mixing</span>
+            <div>
+              <h3>Custom Stain Mixing</h3>
+              <p class="desc">Blending two or more Duraseal stains to create a color that's yours — then proving it on sample boards milled from your actual floor before we commit.</p>
+              <p class="desc" style="margin-top:.5rem"><strong style="color:var(--ink)">When it's needed.</strong> When an off-the-shelf color doesn't sit right into your cabinets, trim, or lighting. Most high-end results come from a custom blend, not a single can.</p>
+              <div class="why"><strong>Why GWT.</strong> This is our signature. Our WheatStone Oak finish was a 1:1 Nutmeg and Country White blend developed over several sample boards to sit right with two different cabinet tones. We don't guess on color — we prove it.</div>
+            </div>
+          </div>
+
+          <div class="row-item" id="bleaching">
+            <span class="cap">Tone Correction</span>
+            <div>
+              <h3>Bleaching</h3>
+              <p class="desc">Chemically lightening wood to remove deep color, even out a naturally uneven background, or reach pale, modern tones that stain alone can't deliver.</p>
+              <p class="desc" style="margin-top:.5rem"><strong style="color:var(--ink)">When it's needed.</strong> Going light or white-washed on a naturally warm species like oak, neutralizing yellow or pink undertones, or lifting old water and pet stains before refinishing.</p>
+              <div class="why"><strong>Why GWT.</strong> Bleaching is unforgiving — uneven application shows forever. We control timing, neutralization, and grain raise so the wood ends up clean and ready to take a light stain evenly.</div>
+            </div>
+          </div>
+
+          <div class="row-item" id="water-based">
+            <span class="cap">Pallmann · Bona · Loba</span>
+            <div>
+              <h3>Water-Based Finishing</h3>
+              <p class="desc">A clear, durable topcoat that dries fast and stays color-true, keeping light woods and cool tones from ambering over time.</p>
+              <p class="desc" style="margin-top:.5rem"><strong style="color:var(--ink)">When it's needed.</strong> When you want the floor to keep its exact color, need lower odor, or are finishing in an occupied home.</p>
+              <div class="why"><strong>Why GWT.</strong> We finish with professional systems like Pallmann, Bona, and Loba and apply in controlled coats — the fast cure window rewards a steady, experienced hand.</div>
+            </div>
+          </div>
+
+          <div class="row-item" id="alcohol-based">
+            <span class="cap">Glitsa-Style Systems</span>
+            <div>
+              <h3>Alcohol-Based Finishing</h3>
+              <p class="desc">A traditional Swedish-style finish system known for a hard, glass-clear film with exceptional clarity and depth.</p>
+              <p class="desc" style="margin-top:.5rem"><strong style="color:var(--ink)">When it's needed.</strong> When you want the classic, time-tested look and a tough surface — often specified for its clarity over fine grain.</p>
+              <div class="why"><strong>Why GWT.</strong> We've worked with Glitsa-style systems for years. These finishes demand ventilation, timing, and respect — exactly the kind of detailed work our family was built on.</div>
+            </div>
+          </div>
+
+          <div class="row-item" id="oil-based">
+            <span class="cap">Traditional Topcoat</span>
+            <div>
+              <h3>Oil-Based Finishing</h3>
+              <p class="desc">A classic polyurethane topcoat that builds warmth and a slight amber glow as it cures, deepening the wood's character over time.</p>
+              <p class="desc" style="margin-top:.5rem"><strong style="color:var(--ink)">When it's needed.</strong> When you want the traditional warm tone, especially on red oak and darker stains, with a forgiving, well-proven finish.</p>
+              <div class="why"><strong>Why GWT.</strong> Oil-based finishes flow and level beautifully when applied right. We control coat thickness and dry time so you get the warmth without runs, bubbles, or an uneven sheen.</div>
+            </div>
+          </div>
+
+          <div class="row-item" id="repairs">
+            <span class="cap">Boards · Trim · Transitions</span>
+            <div>
+              <h3>Repairs &amp; Patching</h3>
+              <p class="desc">Replacing damaged boards, weaving in new wood, and blending repairs into the surrounding floor so they disappear.</p>
+              <p class="desc" style="margin-top:.5rem"><strong style="color:var(--ink)">When it's needed.</strong> Water damage, deep gouges, pet stains, failed previous repairs, or transitions left behind by removed walls and old doorways.</p>
+              <div class="why"><strong>Why GWT.</strong> A good patch is invisible. We match species, grain direction, and board size, then feather the stain and finish so your eye never catches the seam.</div>
+            </div>
+          </div>
+
         </div>
-
-        <div class="service reveal" id="installation">
-          <div>
-            <div class="service-index">02</div>
-            <h3>Hardwood Floor Installation</h3>
-            <div class="service-meta">Solid &amp; engineered</div>
-          </div>
-          <div class="service-body">
-            <p><strong>What it is.</strong> Laying new hardwood — solid or engineered — including subfloor prep, acclimation, layout, fastening, and finishing.</p>
-            <p><strong>When it's needed.</strong> New construction, additions, replacing carpet or tile, or pulling up flooring that's too far gone to refinish.</p>
-            <div class="why"><strong>Why GWT.</strong> We let the wood acclimate, set proper expansion gaps, and plan board layout so the room reads right from the doorway. A floor installed with patience stays flat and tight for decades.</div>
-          </div>
-        </div>
-
-        <div class="service reveal" id="staircases">
-          <div>
-            <div class="service-index">03</div>
-            <h3>Staircase Refinishing</h3>
-            <div class="service-meta">Treads · risers · rails</div>
-          </div>
-          <div class="service-body">
-            <p><strong>What it is.</strong> Refinishing or rebuilding stair treads, risers, and handrails so the staircase matches the floors it connects to.</p>
-            <p><strong>When it's needed.</strong> Stairs take more wear than any floor in the house. When the finish wears through on the nosing or the color no longer matches a freshly refinished floor, the stairs need attention too.</p>
-            <div class="why"><strong>Why GWT.</strong> Stairs are detailed, hand-worked surfaces — lots of edges, no room for shortcuts. We match the floor's stain and sheen exactly so the transition looks like it was always one piece.</div>
-          </div>
-        </div>
-
-        <div class="service reveal" id="stain">
-          <div>
-            <div class="service-index">04</div>
-            <h3>Custom Stain Mixing</h3>
-            <div class="service-meta">Sample boards · hand-blended</div>
-          </div>
-          <div class="service-body">
-            <p><strong>What it is.</strong> Blending two or more stains to create a color that's yours — then proving it on sample boards milled from your actual floor before we commit.</p>
-            <p><strong>When it's needed.</strong> When an off-the-shelf color doesn't tie into your cabinets, trim, or lighting. Most high-end results come from a custom blend, not a single can.</p>
-            <div class="why"><strong>Why GWT.</strong> This is our signature. The WheatStone Oak finish in our portfolio was a 1:1 Nutmeg and Country White blend developed over several sample boards to sit right with two different cabinet tones. We don't guess on color — we prove it.</div>
-          </div>
-        </div>
-
-        <div class="service reveal" id="bleaching">
-          <div>
-            <div class="service-index">05</div>
-            <h3>Bleaching</h3>
-            <div class="service-meta">Lightening &amp; tone control</div>
-          </div>
-          <div class="service-body">
-            <p><strong>What it is.</strong> Chemically lightening wood to remove deep color, even out the natural background, or reach pale, modern tones that stain alone can't deliver.</p>
-            <p><strong>When it's needed.</strong> Going light or white-washed on a naturally warm species like oak, neutralizing yellow or pink undertones, or lifting old water and pet stains before refinishing.</p>
-            <div class="why"><strong>Why GWT.</strong> Bleaching is unforgiving — uneven application shows forever. We control timing, neutralization, and grain raise so the wood ends up clean and ready to take a light stain evenly.</div>
-          </div>
-        </div>
-
-        <div class="service reveal" id="water-based">
-          <div>
-            <div class="service-index">06</div>
-            <h3>Water-based Finishing</h3>
-            <div class="service-meta">Low odor · fast cure · clear</div>
-          </div>
-          <div class="service-body">
-            <p><strong>What it is.</strong> A clear, durable topcoat that dries fast and stays color-true, keeping light woods and cool tones from ambering over time.</p>
-            <p><strong>When it's needed.</strong> When you want the floor to keep its exact color, need lower odor and quicker return-to-service, or are finishing in an occupied home.</p>
-            <div class="why"><strong>Why GWT.</strong> We finish with professional systems like Pallmann, Bona, and Loba and apply in controlled coats — the fast cure window rewards a steady, experienced hand.</div>
-          </div>
-        </div>
-
-        <div class="service reveal" id="alcohol-based">
-          <div>
-            <div class="service-index">07</div>
-            <h3>Alcohol-based Finishing</h3>
-            <div class="service-meta">Hard-wearing · classic clarity</div>
-          </div>
-          <div class="service-body">
-            <p><strong>What it is.</strong> A traditional Swedish-style finish system known for a hard, glass-clear film with exceptional clarity and depth.</p>
-            <p><strong>When it's needed.</strong> When you want the classic, time-tested look and a tough surface — often specified for its clarity over fine grain.</p>
-            <div class="why"><strong>Why GWT.</strong> We've worked with Glitsa-style systems for years. These finishes demand ventilation, timing, and respect — exactly the kind of detailed work our family was built on.</div>
-          </div>
-        </div>
-
-        <div class="service reveal" id="oil-based">
-          <div>
-            <div class="service-index">08</div>
-            <h3>Oil-based Finishing</h3>
-            <div class="service-meta">Warm · rich · forgiving</div>
-          </div>
-          <div class="service-body">
-            <p><strong>What it is.</strong> A classic polyurethane topcoat that adds warmth and a slight amber glow, building a rich, durable film over the wood.</p>
-            <p><strong>When it's needed.</strong> When you want that traditional warm tone, especially on red oak and darker stains, and a forgiving, well-proven finish.</p>
-            <div class="why"><strong>Why GWT.</strong> Oil-based finishes flow and level beautifully when applied right. We control coats and dry times so you get the warmth without runs, bubbles, or uneven sheen.</div>
-          </div>
-        </div>
-
-        <div class="service reveal" id="repairs">
-          <div>
-            <div class="service-index">09</div>
-            <h3>Repairs &amp; Patching</h3>
-            <div class="service-meta">Board swaps · blending</div>
-          </div>
-          <div class="service-body">
-            <p><strong>What it is.</strong> Replacing damaged boards, weaving in new wood, and blending repairs into the surrounding floor so they disappear.</p>
-            <p><strong>When it's needed.</strong> Water damage, deep gouges, pet stains, failed previous repairs, or transitions left behind by removed walls and old registers.</p>
-            <div class="why"><strong>Why GWT.</strong> A good patch is invisible. We match species, grain direction, and board size, then feather the stain and finish so your eye never catches the seam.</div>
-          </div>
-        </div>
-
       </div>
     </section>
 
     <section class="section section--dark">
       <div class="container center reveal">
-        <span class="eyebrow">Not sure what you need?</span>
+        <span class="eyebrow eyebrow--dark">Not sure what you need?</span>
         <h2>Tell us about your floors</h2>
-        <p class="lead" style="margin-top:1rem">We'll walk the space, talk through options honestly, and put together a detailed quote — no pressure, no upsell.</p>
-        <div style="margin-top:1.8rem"><a class="btn" href="pricing.html#quote">Request a quote →</a></div>
+        <p class="lead" style="color:rgba(246,242,234,.74); margin-inline:auto; margin-top:1.1rem">We'll walk the space, talk through options honestly, and put together a detailed quote — no pressure, no upsell.</p>
+        <div style="margin-top:1.9rem"><a class="btn" href="pricing.html#quote">Request a quote <span class="arrow">→</span></a></div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container">
-      <div class="footer-grid">
+      <div class="footer-top">
         <div class="footer-brand">
-          <a class="brand" href="index.html"><span class="brand-mark">GWT</span><span><span class="brand-name" style="color:var(--cream)">GWT Hardwood Floors</span></span></a>
+          <a class="brand" href="index.html"><span class="brand-mark">G·W·T</span><span><span class="brand-name">Hardwood Floors</span></span></a>
           <p>Second-generation hardwood flooring craftsmanship — refinishing, installation, and custom stain work across Pontiac and Metro Detroit.</p>
         </div>
-        <div><h4>Explore</h4><ul class="footer-links"><li><a href="services.html">Services</a></li><li><a href="portfolio.html">Project Portfolio</a></li><li><a href="stain-gallery.html">Stain Gallery</a></li><li><a href="about.html">About Us</a></li></ul></div>
-        <div><h4>Helpful</h4><ul class="footer-links"><li><a href="faq.html">FAQ</a></li><li><a href="floor-care.html">Floor Care Guide</a></li><li><a href="pricing.html">Pricing Guide</a></li><li><a href="pricing.html#quote">Request a Quote</a></li></ul></div>
-        <div><h4>Contact</h4><div class="footer-contact"><span class="tel">Gary · 248-379-6826</span><span class="tel">Jake · 248-632-3244</span><span class="tel">Greg · 947-957-4996</span><a href="mailto:gwthardwoodfloors@gmail.com">gwthardwoodfloors@gmail.com</a><span>Serving all of Michigan</span></div></div>
+        <div class="footer-col"><h4>Explore</h4><ul><li><a href="services.html">Services</a></li><li><a href="stain-gallery.html">Stain Gallery</a></li><li><a href="about.html">About Us</a></li></ul></div>
+        <div class="footer-col"><h4>Helpful</h4><ul><li><a href="faq.html">FAQ</a></li><li><a href="floor-care.html">Floor Care Guide</a></li><li><a href="pricing.html">Pricing Guide</a></li><li><a href="pricing.html#quote">Request a Quote</a></li></ul></div>
+        <div class="footer-col"><h4>Contact</h4><ul>
+          <li><a href="tel:+12483796826">Gary · 248-379-6826</a></li>
+          <li><a href="tel:+12486323244">Jake · 248-632-3244</a></li>
+          <li><a href="tel:+19479574996">Greg · 947-957-4996</a></li>
+          <li><a href="mailto:gwthardwoodfloors@gmail.com">gwthardwoodfloors@gmail.com</a></li>
+          <li><span>Serving all of Michigan</span></li>
+        </ul></div>
       </div>
-      <div class="footer-bottom"><span>© 2026 GWT Hardwood Floors · Family-owned, Michigan-built</span><span>Glitsa · Duraseal · Pallmann · Bona · Loba</span></div>
+      <div class="footer-bottom">
+        <span>© 2026 GWT Hardwood Floors · Family-owned, Michigan-built</span>
+        <span>Stains by Duraseal · Finishes by Glitsa, Pallmann, Bona, Loba</span>
+      </div>
     </div>
   </footer>
   <script src="main.js"></script>
